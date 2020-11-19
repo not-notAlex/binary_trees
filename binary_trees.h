@@ -43,10 +43,11 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 void binary_tree_print(const binary_tree_t *);
-unsigned int tree_size(const binary_tree_t *tree, unsigned int sum);
 unsigned int tree_total(const binary_tree_t *tree, unsigned int sum);
 unsigned int tree_leaves(const binary_tree_t *tree, unsigned int sum);
 unsigned int tree_children(const binary_tree_t *tree, unsigned int sum);
-int tree_height(const binary_tree_t *tree, int sum);
+int tree_height(const binary_tree_t *tree);
+int find_depth(const binary_tree_t *tree);
+int tree_perfect(const binary_tree_t *tree, int d, int level);
 
 #endif

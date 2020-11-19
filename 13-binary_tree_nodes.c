@@ -11,11 +11,11 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	return tree_children(tree, 0);
+	return (tree_children(tree, 0));
 }
 
 /**
- * tree_children counts number of nodes in a tree with a child
+ * tree_children - counts number of nodes in a tree with a child
  * @tree: tree to calculate
  * @sum: current total
  * Return: total
